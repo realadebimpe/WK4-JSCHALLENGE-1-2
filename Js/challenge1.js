@@ -14,22 +14,9 @@
 
 let test = "dcba";
 
-function comparator(a, b) {
-    a = a.charCodeAt()
-    b = b.charCodeAt()
-    return a == b ? 0 : a > b ? 1 : -1
-    if (a == b) {
-        return 0;
-    } else if (a > b) {
-        return 1;
-    } else {
-        return -1;
-    }
-}
-
-function sortString(str = "dcba") {
+function sortString(str) {
     return str.split('')
-        .sort(comparator)
+        .sort()
         .join('')
 }
 
