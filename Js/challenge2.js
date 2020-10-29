@@ -5,12 +5,12 @@
 // would result in the number 3 being returned.
 
 
-let count = 0;
+
 let vowel = "aeiou";
 function vowelCount(str) {
-  
+    let count = 0;
     for (let i = 0; i <str.length; i++){
-        if (vowel.indexOf(str[i]) !== -1) {
+        if (vowel.indexOf(str[i].toLowerCase()) !== -1) {
             count += 1;
         }
     }
